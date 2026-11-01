@@ -5,7 +5,7 @@ My own Claude Code skills, one folder per skill. Each folder has a `SKILL.md`.
 | Skill | What it does |
 |---|---|
 | `web-cinematica` | Premium scroll-controlled cinematic websites for real businesses (Higgsfield video, Vercel). |
-| `mockup-dashboard` | Before building any dashboard/panel idea, makes a realistic Higgsfield mockup in a sober, non-AI-looking product style. |
+| `mockup-dashboard` | Before building any dashboard/panel idea, makes a realistic mockup (Higgsfield recommended, optional; or rendered HTML) in a sober, non-AI-looking product style. |
 | `cover-letter` | Cover letter PDF for a job offer, in my plain, direct writing style. |
 
 ## Use a skill
