@@ -14,7 +14,7 @@ Input: a pasted job offer (often a LinkedIn page dump, sometimes with the compan
    - `cv-src/data.mjs` (English block), the current CV facts.
    - His website https://fomencuccini.com/ (WebFetch, or `index.html` in the repo).
    - His LinkedIn https://www.linkedin.com/in/fomencuccini/ : open it with the Claude in Chrome extension (load the `mcp__claude-in-chrome__*` tools with ToolSearch, open a new tab, `get_page_text`, close the tab afterwards). If LinkedIn does not load or asks for a login, STOP and tell him so he can fix it, then continue. Saved copies are in `linkedin/*.txt` and `linkedin/linkedin-copy.md` as a fallback.
-   Reference style: `cover-letters/letters/PSI.txt`; reference result: `example-aity.txt` in this skill folder.
+   Reference style: `cover-letters/letters/PSI.txt`; THE reference result is `example-bsi.txt` in this skill folder: he loves this one and wants every letter built exactly like it (same 5-paragraph structure, same plain tone and level of detail, same closing paragraph with location, availability and languages). `example-aity.txt` is an older, more technical example; follow BSI where they differ.
 3. Write `cover-letters/letters/<Company>.txt` (use `<Company>-<City>` if the company already has a letter).
 4. Build: `node cover-letters/build.mjs cover-letters/letters/<Company>.txt` (needs Google Chrome). Check `pdfinfo` says 1 page.
 5. Send the PDF with SendUserFile (display: render), then report briefly in Spanish (he writes to me in Spanish, the letter is in English unless the offer demands another language).

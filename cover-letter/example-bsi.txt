@@ -1,0 +1,14 @@
+Dear Hiring Team at BSI,
+
+I am writing to apply for the Junior Cloud Operations Engineer position in Zürich. I currently work as a Cloud Operations & AI Engineer at Hirint.io, where my role is strongly focused on running cloud infrastructure, monitoring, automation and security. I have more than five years of experience in IT and hold the Azure Administrator Associate (AZ-104) and Azure Fundamentals (AZ-900) certifications, along with the AWS Solutions Architect – Associate certification. In April 2026 I also completed an Advanced Program in Cloud Architectures at UNIR.
+
+At Hirint I operate the company's Azure environment, covering networking, security, databases, backup and monitoring. I centralised all the logs in one place, more than a billion events, and built automatic alerting on top of it, so something is always watching and we are notified straight away when an incident, an anomaly or a new cost appears. I work with private endpoints and private DNS, Docker and Linux containers with Azure Container Registry, and Azure Backup for recovery, and I am used to troubleshooting production issues down to the root cause. I also work a lot on FinOps and saved 1,800 euros in Azure costs through cost reporting, budgets and anomaly alerts.
+
+I have strong experience in automation. I deliver through CI/CD with Azure DevOps (Azure Repos and Pipelines) and GitHub Actions, publishing Docker images to Azure Container Registry, and I have used Terraform in my personal cloud projects, such as StockCloud and my cloud resume site on Azure. I have solid Linux knowledge with Ubuntu and Debian, and I script in Bash, PowerShell and Python. I built 12 internal applications and connected our sales, support, communication and storage tools into one platform on Azure, so that teams work from a single place and repetitive tasks run on their own.
+
+At Grupo Cadarso I worked with VMware, Windows Server, networking, Microsoft Entra ID, Conditional Access and MFA. I am a responsible and strong problem solver and I strongly believe in thorough documentation. I am very motivated to take the next step in my career as a cloud engineer, I learn quickly, I am always eager to work with new technologies, and I like to think outside the box to find better solutions.
+
+I currently live in Barcelona and I am planning to move to Switzerland, which I can do without any problem. I am available at 100% with a notice period of one month. I speak English and Italian natively, and Spanish and Catalan fluently. I would be excited to contribute my cloud operations, automation and monitoring experience to BSI's SaaS platform.
+
+Kind regards,
+Federico Oliver Mencuccini
