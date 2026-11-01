@@ -10,7 +10,11 @@ Input: a pasted job offer (often a LinkedIn page dump, sometimes with the compan
 ## Steps
 
 1. Read the offer. Note role, city, remote/hybrid, required languages, must-have and nice-to-have tech, regulated sector, and whether the offer says a cover letter is optional.
-2. Analyse ALL his sources before writing, then match them to the offer's requirements one by one: `cv-src/data.mjs` (English block), his website (`index.html`, fomencuccini.com) and his LinkedIn texts (`linkedin/*.txt`, `linkedin/linkedin-copy.md`). Never invent facts. For every must-have in the offer, find what he really has and name it in the letter. Reference style: `cover-letters/letters/PSI.txt`; reference result: `example-aity.txt` in this skill folder.
+2. Analyse ALL his sources before writing, then match them to the offer's requirements one by one. Never invent facts. For every must-have in the offer, find what he really has and name it in the letter. Sources:
+   - `cv-src/data.mjs` (English block), the current CV facts.
+   - His website https://fomencuccini.com/ (WebFetch, or `index.html` in the repo).
+   - His LinkedIn https://www.linkedin.com/in/fomencuccini/ : open it with the Claude in Chrome extension (load the `mcp__claude-in-chrome__*` tools with ToolSearch, open a new tab, `get_page_text`, close the tab afterwards). If LinkedIn does not load or asks for a login, STOP and tell him so he can fix it, then continue. Saved copies are in `linkedin/*.txt` and `linkedin/linkedin-copy.md` as a fallback.
+   Reference style: `cover-letters/letters/PSI.txt`; reference result: `example-aity.txt` in this skill folder.
 3. Write `cover-letters/letters/<Company>.txt` (use `<Company>-<City>` if the company already has a letter).
 4. Build: `node cover-letters/build.mjs cover-letters/letters/<Company>.txt` (needs Google Chrome). Check `pdfinfo` says 1 page.
 5. Send the PDF with SendUserFile (display: render), then report briefly in Spanish (he writes to me in Spanish, the letter is in English unless the offer demands another language).
@@ -35,6 +39,7 @@ Rules: never use jargon he does not use himself (for example "runbooks", "operat
 
 - Tools he HAS, name them whenever the offer asks for them: Terraform; Docker; CI/CD with Azure DevOps (Azure Repos and Pipelines) and GitHub Actions; Azure Container Registry; Linux, including Ubuntu and Debian; Bash and Python scripting.
 - Achievements to include: he has built many integrations (Clientify, Aircall, Chatwoot, Slack, SendGrid, Notion, Google Drive, Event Grid) besides the 12 internal apps and Sales Studio. Mention them when the offer values automation, APIs or integration.
+- Extra facts from his website and LinkedIn (use when relevant): 16 web apps across 11 deployment slots and 21 private endpoints with Front Door and WAF at Hirint; compliance evidence automation for ISO 27001/42001, ENS, NIS2 and GDPR; n8n with AI for log analysis; monthly clean-up of orphaned resources as a FinOps habit; Python and n8n automation; three recommendation letters (Cadarso, Amundi, COFB); client websites DV Love and Volquetes Bombita; ModernSMTP (PHP and Graph API) sold on Payhip. Never mention the number of Azure resources (the old "320").
 - ALWAYS include the FinOps result with the number: he saved 1,800 euros in Azure costs (cost reporting, budgets, anomaly alerts).
 
 - Lives in Barcelona, is moving to Switzerland, can move without any problem. For Swiss offers say this in the last paragraph. For offers elsewhere adapt or ask.
