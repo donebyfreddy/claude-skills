@@ -5,7 +5,7 @@ description: Write Federico's cover letter PDF for a job offer in his own plain,
 
 # Cover letter for Federico
 
-Input: a pasted job offer (often a LinkedIn page dump, sometimes with the company URL). Output: `cover-letters/letters/<Company>.txt` and a one-page PDF at `cover-letters/out/<Company>.pdf`, sent to him with SendUserFile.
+Input: a pasted job offer (often a LinkedIn page dump, sometimes with the company URL). Output: `cover-letters/letters/<Company>.txt` and a one-page PDF at `cover-letters/out/<Company> - Cover Letter.pdf` (the file name is always the company name, then " - Cover Letter"; build.mjs already names it that way, never rename or add a different name), sent to him with SendUserFile.
 
 ## Steps
 
@@ -22,12 +22,14 @@ He writes plain, direct, CV-structured letters, not conversational ones. Past at
 
 Structure, 5 paragraphs, no bullets:
 1. "I am writing to apply for the <role> position in <city>. I currently work as a Cloud Operations & AI Engineer at Hirint.io, where my role is strongly focused on <the offer's own themes>." Then years of experience (more than five years in IT) and certifications: AZ-104, AZ-900, AWS Solutions Architect Associate, Advanced Program in Cloud Architectures at UNIR (April 2026).
-2. What he does day to day at Hirint matched to the offer (around 320 Azure resources, networking, private endpoints, Front Door WAF, Key Vault, OIDC, Azure Monitor, Log Analytics, Defender) plus FinOps result.
+2. What he does day to day at Hirint matched to the offer (Azure networking, private endpoints, Front Door WAF, Key Vault, OIDC, Azure Monitor, Log Analytics, Defender) plus FinOps result.
 3. Automation / IaC / development: CI/CD with Azure DevOps and GitHub Actions, Terraform in personal projects (StockCloud, cloud resume site), the 12 internal apps, Sales Studio. He likes developing and polishing tools.
 4. Security / identity / working style: Cadarso (Entra ID, Conditional Access, MFA, Intune, 1Password rollout), strong problem solver, believes in thorough documentation.
-5. Where he lives and relocation, languages, and a closing line about contributing to that company's specific thing. Then "Kind regards," + "Federico Oliver Mencuccini".
+5. Where he lives and relocation, languages, motivation (see below), and a closing line about contributing to that company's specific thing. Then "Kind regards," + "Federico Oliver Mencuccini".
 
-Rules: first person, plain sentences, patterns he uses ("I have strong experience in...", "I am a strong problem solver", "I strongly believe in thorough documentation", "I would be excited to contribute my ... to <Company>'s ..."). Match the offer's keywords. No em dashes, no emojis, no buzzword stacking, no rhetorical flourishes. One A4 page. Greeting is "Dear Hiring Team at <Company>,".
+Motivation line (mandatory in every letter, he asked for it explicitly): one plain sentence in paragraph 4 or 5 saying he is very motivated and eager to learn, and that he thinks outside the box. Example: "I am very motivated to take the next step in my career as a cloud engineer, I learn quickly, I am always eager to work with new technologies, and I like to think outside the box to find better solutions." Keep it in his plain style, one sentence, no flourishes, and keep the letter on one page.
+
+Rules: never mention the number of Azure resources ("320 resources", "around 320") in a letter; it stays on the CV only. First person, plain sentences, patterns he uses ("I have strong experience in...", "I am a strong problem solver", "I strongly believe in thorough documentation", "I would be excited to contribute my ... to <Company>'s ..."). Match the offer's keywords. No em dashes, no emojis, no buzzword stacking, no rhetorical flourishes. One A4 page. Greeting is "Dear Hiring Team at <Company>,".
 
 ## Facts he has stated in chat (use unless he says otherwise)
 
@@ -39,7 +41,11 @@ Rules: first person, plain sentences, patterns he uses ("I have strong experienc
 
 ## Honesty and when to ask
 
-State gaps honestly in one short sentence instead of hiding them (example: "I have not worked in a FINMA-regulated environment yet, but I automate ISO 27001 compliance checks"). Never claim German, Terragrunt, Kubernetes, or any tool/sector that is not in `cv-src/data.mjs`.
+Never claim anything he has not done (German, Terragrunt, Kubernetes, or any tool/sector not in `cv-src/data.mjs`). But also never write sentences about what he has NOT done: no "I have not worked with X", no "I would be glad to learn X". He explicitly banned this. Simply leave the missing tools out and stress what he does have, plus his attitude (below). The gaps are reported to him in chat after the PDF, never in the letter.
+
+## Who he is (put this across in every letter)
+
+He is a motivated, responsible person who wants to work, learns fast, is eager to grow and is reliable and proactive. Show it with plain statements, for example: "I am a responsible and motivated person, I take ownership of my work, I learn quickly and I am always eager to work with new technologies." When the offer has a requirement he cannot meet (for example German), do not mention it; lean on this attitude instead.
 
 Ask him (AskUserQuestion, short) only when it changes the letter: the offer needs a language he does not speak (German is the usual one, say it plainly and ask whether to apply anyway), the role is far from cloud/sysadmin, the location is outside Switzerland/Spain and relocation is unclear, or a number or fact he gave conflicts with the CV. Otherwise just write it.
 
