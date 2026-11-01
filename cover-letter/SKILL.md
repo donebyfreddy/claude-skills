@@ -10,7 +10,7 @@ Input: a pasted job offer (often a LinkedIn page dump, sometimes with the compan
 ## Steps
 
 1. Read the offer. Note role, city, remote/hybrid, required languages, must-have and nice-to-have tech, regulated sector, and whether the offer says a cover letter is optional.
-2. Read current facts from `cv-src/data.mjs` (English block). Never invent facts. Reference style: `cover-letters/letters/PSI.txt`; reference result: `example-aity.txt` in this skill folder.
+2. Analyse ALL his sources before writing, then match them to the offer's requirements one by one: `cv-src/data.mjs` (English block), his website (`index.html`, fomencuccini.com) and his LinkedIn texts (`linkedin/*.txt`, `linkedin/linkedin-copy.md`). Never invent facts. For every must-have in the offer, find what he really has and name it in the letter. Reference style: `cover-letters/letters/PSI.txt`; reference result: `example-aity.txt` in this skill folder.
 3. Write `cover-letters/letters/<Company>.txt` (use `<Company>-<City>` if the company already has a letter).
 4. Build: `node cover-letters/build.mjs cover-letters/letters/<Company>.txt` (needs Google Chrome). Check `pdfinfo` says 1 page.
 5. Send the PDF with SendUserFile (display: render), then report briefly in Spanish (he writes to me in Spanish, the letter is in English unless the offer demands another language).
@@ -32,6 +32,10 @@ Motivation line (mandatory in every letter, he asked for it explicitly): one pla
 Rules: never use jargon he does not use himself (for example "runbooks", "operational excellence", "hands-on", "ownership"); copy the offer's nouns only when they are plain and say "documentation" for docs. He flags these as AI style. Never mention the number of Azure resources ("320 resources", "around 320") in a letter; it stays on the CV only. First person, plain sentences, patterns he uses ("I have strong experience in...", "I am a strong problem solver", "I strongly believe in thorough documentation", "I would be excited to contribute my ... to <Company>'s ..."). Match the offer's keywords. No em dashes, no emojis, no buzzword stacking, no rhetorical flourishes. One A4 page. Greeting is "Dear Hiring Team at <Company>,".
 
 ## Facts he has stated in chat (use unless he says otherwise)
+
+- Tools he HAS, name them whenever the offer asks for them: Terraform; Docker; CI/CD with Azure DevOps (Azure Repos and Pipelines) and GitHub Actions; Azure Container Registry; Linux, including Ubuntu and Debian; Bash and Python scripting.
+- Achievements to include: he has built many integrations (Clientify, Aircall, Chatwoot, Slack, SendGrid, Notion, Google Drive, Event Grid) besides the 12 internal apps and Sales Studio. Mention them when the offer values automation, APIs or integration.
+- ALWAYS include the FinOps result with the number: he saved 1,800 euros in Azure costs (cost reporting, budgets, anomaly alerts).
 
 - Lives in Barcelona, is moving to Switzerland, can move without any problem. For Swiss offers say this in the last paragraph. For offers elsewhere adapt or ask.
 - FinOps: saved 1,800 euros in Azure costs (cost reporting, budgets, anomaly alerts). Note: `cv-src/data.mjs` still says "€1,000+"; flag the mismatch to him if it is still there.
