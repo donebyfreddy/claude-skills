@@ -52,6 +52,10 @@ Rules: never use jargon he does not use himself (for example "runbooks", "operat
 
 Never claim anything he has not done (German, Terragrunt, Kubernetes, or any tool/sector not in `cv-src/data.mjs`). But also never write sentences about what he has NOT done: no "I have not worked with X", no "I would be glad to learn X". He explicitly banned this. Simply leave the missing tools out and stress what he does have, plus his attitude (below). The gaps are reported to him in chat after the PDF, never in the letter.
 
+## Level of detail (he asked for this explicitly)
+
+It is a motivation letter, not a technical report. Describe WHAT he achieved and WHY it matters, in broad confident strokes, so the reader thinks "this person has done things"; the details come in the interview. Do not list product or tool names for integrations (no "Clientify, Aircall, Chatwoot..."): say "connected our sales, support, communication and storage tools into one platform". Do not give counts like "46 alert rules": say what it does ("centralised all the logs in one place and built automatic alerting, so something is always watching and we are notified of incidents, anomalies and new costs"). Keep named tools only for what the offer itself asks for (Terraform, Docker, CI/CD, Linux, Bash, Python, Azure services). Be confident, never invent facts.
+
 ## Who he is (put this across in every letter)
 
 He is a motivated, responsible person who wants to work, learns fast, is eager to grow and is reliable and proactive. Show it with plain statements, for example: "I am a responsible and motivated person, I take ownership of my work, I learn quickly and I am always eager to work with new technologies." When the offer has a requirement he cannot meet (for example German), do not mention it; lean on this attitude instead.
